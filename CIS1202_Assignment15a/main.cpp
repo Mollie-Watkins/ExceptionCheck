@@ -1,14 +1,38 @@
-//
-//  main.cpp
-//  CIS1202_Assignment15a
-//
-//  Created by Mollie Watkins on 11/27/25.
-//
+// Mollie Watkins
+// CIS 1202 801
+// November 27, 2025
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+
+char character(char, int);
+
+
+
+// Name:
+// Purpose:
+// Parameters:
+// Returns:
+int main()
+{
+    
+    
+    
+    return EXIT_SUCCESS;
+}
+
+
+
+// Name:
+// Purpose:
+// Parameters:
+// Returns:
+char character(char start, int offset)
+{
+    
+    
+    
+    return 't'; // temp
 }
