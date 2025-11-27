@@ -6,5 +6,14 @@
 #ifndef Exception_h
 #define Exception_h
 
+class Exception
+{
+    public:
+        class invalidCharacterException
+        {};
+    
+        class invalidRangeException
+        {};
+};
 
 #endif

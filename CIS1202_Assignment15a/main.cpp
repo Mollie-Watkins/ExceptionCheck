@@ -3,12 +3,12 @@
 // November 27, 2025
 
 #include <iostream>
+#include "Exception.h"
 
 using namespace std;
 
 
 char character(char, int);
-
 
 
 // Name:
@@ -22,7 +22,6 @@ int main()
     
     return EXIT_SUCCESS;
 }
-
 
 
 // Name:
