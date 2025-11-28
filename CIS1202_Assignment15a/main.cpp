@@ -17,7 +17,28 @@ char character(char, int);
 // Returns:
 int main()
 {
+    const int SIZE = 5;
+    char startTestArray[SIZE] = {'a', 'a', 'Z', '?', 'A'};
+    int offsetTestArray[SIZE] = {1, -1, -1, 5, 32};
     
+    
+    for(int i = 0; i < SIZE; ++i)
+    {
+        cout << "Test case #" << (i + 1) << ": ";
+        
+        try
+        {
+            cout << character(startTestArray[i], offsetTestArray[i]) << endl;
+        }
+        catch(Exceptions::invalidCharacterException)
+        {
+            cout << "ERROR: invalid character." << endl;
+        }
+        catch(Exceptions::invalidRangeException)
+        {
+            cout << "ERROR: invalid range." << endl;
+        }
+    }
     
     
     return EXIT_SUCCESS;
