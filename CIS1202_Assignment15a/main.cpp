@@ -3,7 +3,7 @@
 // November 27, 2025
 
 #include <iostream>
-#include "Exception.h"
+#include "Exceptions.h"
 
 using namespace std;
 
@@ -30,8 +30,34 @@ int main()
 // Returns:
 char character(char start, int offset)
 {
+    char    target = start + offset,
+            validMin,
+            validMax;
     
     
+    // Valid range determination
+    if(!isalpha(start))
+    {
+        throw Exceptions::invalidCharacterException{};
+    }
+    else if(isupper(start))
+    {
+        validMin = 'A';
+        validMax = 'Z';
+    }
+    else
+    {
+        validMin = 'a';
+        validMax = 'z';
+    }
     
-    return 't'; // temp
+    
+    // Target value check
+    if(target < validMin || target > validMax)
+    {
+        throw Exceptions::invalidRangeException{};
+    }
+    
+    
+    return target;
 }
